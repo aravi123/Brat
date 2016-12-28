@@ -1,0 +1,14 @@
+.navBar{
+  background-color: #2196F3;
+  text-align: center;
+  height: 50px;
+}
+.navBar span{
+  font-size: 25px;
+  color: #E3F2FD;
+  margin-left: 4%;
+  margin-top: .7%;
+}
+.navBar h2{
+  text-align: center;
+}

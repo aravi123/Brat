@@ -9,6 +9,7 @@
  */
 angular.module('bratApp')
   .controller('AboutCtrl', function () {
+  	console.log("obj");
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

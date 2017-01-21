@@ -5,14 +5,16 @@ version 0.15.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+To run the server npm install && nodemon www
 
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
 
 ## Installation
-https://gist.github.com/tusharbabbar/d8fc8d3448db6085bae6
+AngularJs Installation:https://gist.github.com/tusharbabbar/d8fc8d3448db6085bae6
+
+Mongodb installation :https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-14-04
 
 ##Refernce
 https://material.angularjs.org/latest/

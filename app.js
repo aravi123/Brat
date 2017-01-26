@@ -5,16 +5,19 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+//var routes = require('./routes/index');
+//var users = require('./routes/users');
 //Database
 
 var checkDbConnection = require('./Database/dbConnection.js').getDbConnection();
 
+var signup = require('./Database/Signup.js');
+
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, '/app'));
+
+app.set('app', path.join(__dirname, 'app'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
@@ -25,9 +28,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'app')));
 
-app.use('/', routes);
-app.use('/users', users);
-
+//app.use('/', routes);
+//app.use('/users', users);
+app.post('/signup',signup);
+// app.post('/signup',function(req,res){
+//   console.log(req.body);
+// });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

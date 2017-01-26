@@ -1,7 +1,14 @@
 var mongoose = require('mongoose');
 
-var userSchema = new mongooseSchema({
-	name: {
+var userSchema = new mongoose.Schema({
+	id:{
+		type:mongoose.Schema.ObjectId
+	},
+	fname: {
+		type:String,
+		default:""
+	},
+	lname:{
 		type:String,
 		default:""
 	},
@@ -9,7 +16,11 @@ var userSchema = new mongooseSchema({
 		type:String,
 		default:""
 	},
-	phoneno: {
+	gender: {
+		type:String,
+		default:""
+	},
+	password:{
 		type:String,
 		default:""
 	}

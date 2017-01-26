@@ -9,9 +9,9 @@
          <form>
             <div class="name">
                      <h4>FIRST NAME</h4>
-                    <input type="text" first name="feedback"> <br> <br>
+                    <input type="text" first name="feedback" class="fname"> <br> <br>
                     <h4>LAST NAME</h4>
-                    <input type="text" last name="feedback"> <br> <br>
+                    <input type="text" last name="feedback" class="lname"> <br> <br>
             </div>
             <div class="lowerportion">
              <div class="details">
@@ -22,13 +22,14 @@
             </div>    
               
             <div class="user">
-                <h4>EMAIL </h4>
-                <input type="text" placeholder="EMAIL" name="uname" required>
+                <h4>EMAIL</h4>
+                <input type="text" placeholder="EMAIL" name="uname" required class="email">
             </div>
             <div class="pass">
                 <h4>PASSWORD</h4>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-               
+                <h4>Confirm Password</h4> 
+                <input type="password" name="psw" placeholder="Reenter Password" required="true" class="password">
              </div>
  
              
@@ -37,7 +38,7 @@
             
                      <div class="col-sm-6">
                          <div class="loginbar"> 
-                            <button type="submit">SIGN UP</button>
+                            <button type="submit" ng-click = "getUserData()">SIGN UP</button>
                        
 
                          </div>

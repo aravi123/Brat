@@ -1,0 +1,24 @@
+.signinbody{
+	width: 50%;
+	text-align: center;
+	margin-top: 20px;
+	height: 200px;
+}
+.signinformpassword{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 40%;
+}
+.signinformemail{
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+}
+.signinform{
+	text-align: center;
+	margin: 0 auto;
+}
+.signinbtn{
+	margin-top: 10px;
+}

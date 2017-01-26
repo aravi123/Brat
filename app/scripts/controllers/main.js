@@ -25,7 +25,7 @@ angular.module('bratApp')
 	 			data:data
 	 		}).then(function sucess(res){
 	 			if (res.status==200) {
-	 				$location.path('/about');
+	 				$location.path('/signin');
 	 			}
 	 		});
 	 	}

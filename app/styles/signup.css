@@ -33,7 +33,7 @@
 
 
 
-.container
+/*.container
 {
 background-color: beige;
 width: 100%;
@@ -109,10 +109,4 @@ button
 {
     margin-top: 20px;
 }
-@media only screen and (max-width: 500px) 
-{                                               
-    body 
-    {
-        background-color:lightblue;
-    }
-}
+*/

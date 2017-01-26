@@ -12,6 +12,7 @@ var bodyParser = require('body-parser');
 var checkDbConnection = require('./Database/dbConnection.js').getDbConnection();
 
 var signup = require('./Database/Signup.js');
+var signin = require('./Database/Signin.js');
 
 var app = express();
 
@@ -31,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'app')));
 //app.use('/', routes);
 //app.use('/users', users);
 app.post('/signup',signup);
+app.post('/login',signin);
+
 // app.post('/signup',function(req,res){
 //   console.log(req.body);
 // });

@@ -8,11 +8,24 @@
  * Controller of the bratApp
  */
 angular.module('bratApp')
-  .controller('AboutCtrl', function () {
-  	console.log("obj");
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function ($scope,$http,$location) {
+  	
+  	$scope.checkSignIn = function(){
+
+  		var data = {};
+  		
+  		data.email =  $('.signinformemail').val();
+  		data.password = $('.signinformpassword').val();
+
+  		$http({
+  			method:'POST',
+  			url:'/login',
+  			data:data,
+  			
+  		}).then(function(res){
+  			console.log(res);
+  			
+  		});
+
+  	}
   });

@@ -20,11 +20,12 @@ router.post('/login',function (req,res) {
 			console.log(sucess.fname);
 			res.status(200).send(sucess);
 			//req.session.id = sucess.objectId;
-			session = req.session;
-			session.key  = sucess.fname;
+			//session = req.session;
+			//session.key  = sucess.fname;
 			
 			req.session.name  = sucess._id;
 			sess = req.session.name;
+			req.session.save();
 			//console.log(req.session);
 
 			//console.log();

@@ -20,6 +20,8 @@ angular.module('bratApp')
     	}).then(function sucess(response){
     		console.log("Get user Id");
     		console.log(response);
+            $rootScope.firstname = response.data.fname;
+            $rootScope.lstname = response.data.lname;
     	});
     }
   });

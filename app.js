@@ -1,10 +1,14 @@
 var express = require('express');
 var path = require('path');
+var redis = require('redis');
 var favicon = require('serve-favicon');
+var session = require('express-session');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var MongoStore = require('connect-mongo')(session);
 
+global.sess;
 //var routes = require('./routes/index');
 //var users = require('./routes/users');
 //Database
@@ -13,6 +17,7 @@ var checkDbConnection = require('./Database/dbConnection.js').getDbConnection();
 
 var signup = require('./Database/Signup.js');
 var signin = require('./Database/Signin.js');
+var userid = require('./Database/userid.js');
 
 var app = express();
 
@@ -21,6 +26,7 @@ var app = express();
 app.set('app', path.join(__dirname, 'app'));
 app.set('view engine', 'ejs');
 
+app.locals.session="";
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -28,11 +34,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'app')));
+app.use(session({ 
+  secret:'SEKR37',
+  store: new MongoStore({url:'mongodb://localhost:27017/miniprojtest'})
+}));
 
 //app.use('/', routes);
 //app.use('/users', users);
 app.post('/signup',signup);
 app.post('/login',signin);
+app.get('/userId',userid);
 
 // app.post('/signup',function(req,res){
 //   console.log(req.body);

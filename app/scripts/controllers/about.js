@@ -23,7 +23,7 @@ angular.module('bratApp')
   			data:data,
   			
   		}).then(function(res){
-  			console.log(res);
+  			 $location.path('/dashboard');
   			
   		});
 

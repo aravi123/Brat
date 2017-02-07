@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var redis = require('redis');
+//var redis = require('redis');
 var favicon = require('serve-favicon');
 var session = require('express-session');
 var logger = require('morgan');

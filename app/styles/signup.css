@@ -33,13 +33,13 @@
 
 
 
-/*.container
+.signupcontainer
 {
 background-color: beige;
 width: 100%;
 height:100%;
 }
-.login
+.signuplogin
 {
    margin-left: 28%;
     width: 50%;
@@ -47,65 +47,52 @@ height:100%;
 }
 
 
-.lowerportion
+.signuplowerportion
 {
     background-color: bisque;
 }
-.name
+.signupname
 {
     background-color: azure;
     
 }
 
 
-input[type=text] 
-{
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
 
 
-input[type=password]
+.signuppass
 {
     width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+   
 }
-.cancel
+.signupcancel
 {
     background-color: black;
 }
-.loginbar
+.signuploginbar
 {
 width:50%;
 }
 
-button 
+.signupbutton
 {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: none;
     cursor: pointer;
     width: 100%;
 }
 
-.cancelbtn
+.signupcancelbtn
 {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
 
-.message
+.signupmessage
 {
     margin-top: 20px;
 }

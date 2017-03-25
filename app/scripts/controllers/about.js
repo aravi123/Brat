@@ -16,7 +16,7 @@ angular.module('bratApp')
   		
   		data.email =  $('.signinformemail').val();
   		data.password = $('.signinformpassword').val();
-
+      console.log(data);
   		$http({
   			method:'POST',
   			url:'/login',

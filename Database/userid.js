@@ -9,13 +9,14 @@ router.get('/userId',function (req,res) {
 	//console.log("obj");
 	console.log(req.session.name);
 	//res.send(sess);
-	if (sess) {
+	if (req.session.name) {
 		userData.findOne({
 			_id:req.session.name,
 		},
 		function(err,sucess){
 			if (err) {
 				res.status(404).send("Not found");
+				console.log("obj");
 			}
 			else{
 				res.status(200).send(sucess);

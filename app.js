@@ -18,6 +18,7 @@ var checkDbConnection = require('./Database/dbConnection.js').getDbConnection();
 var signup = require('./Database/Signup.js');
 var signin = require('./Database/Signin.js');
 var userid = require('./Database/userid.js');
+var bankaccount = require('./Database/bankaccount.js');
 
 var app = express();
 
@@ -43,6 +44,8 @@ app.use(session({
 app.post('/signup',signup);
 app.post('/login',signin);
 app.get('/userId',userid);
+app.post('/bankaccount',bankaccount);
+
 
 // app.post('/signup',function(req,res){
 //   console.log(req.body);

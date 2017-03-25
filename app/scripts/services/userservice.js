@@ -24,4 +24,15 @@ angular.module('bratApp')
             $rootScope.lstname = response.data.lname;
     	});
     }
+    this.getBankdetails = function(){
+        $http({
+            method:'GET',
+            url:'/userbankdetails',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        }).then(function sucess(res){
+            
+        })
+    }
   });

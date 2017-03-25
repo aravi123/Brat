@@ -39,6 +39,26 @@ angular
         controller:'DashboardctrlCtrl',
         controllerAs:'dashboard'
       })
+      .when('/bankaccount',{
+        templateUrl:'../views/bankdetails.html',
+        controller:'BankdetailsCtrl',
+        controllerAs:'bankdetails'
+      })
+      .when('/Water',{
+        templateUrl:'../views/bills.html',
+        controller:'BillsCtrl',
+        controllerAs:'bills'
+      })
+      .when('/kseb',{
+        templateUrl:'../views/kseb.html',
+        controller:'KsebCtrl',
+        controllerAs:'Kseb'
+      })
+      .when('/incometax',{
+        templateUrl:'../views/incometax.html',
+        controller:'IncometaxCtrl',
+        controllerAs:'Incometax'
+      })
       .otherwise({
         redirectTo: '/'
       });

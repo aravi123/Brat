@@ -1,35 +1,34 @@
 
-    <div class="container">
+    <div class="signupcontainer">
        <div class= "intro" >
          <div class="col-mod-12 text-center">
             <h1> UNIPORTAL</h1>
          </div> 
        </div>
-       <div class="login">
-         <form>
-            <div class="name">
+       <div class="signuplogin">
+            <div class="signupname">
                      <h4>FIRST NAME</h4>
                     <input type="text" first name="feedback" class="fname"> <br> <br>
                     <h4>LAST NAME</h4>
                     <input type="text" last name="feedback" class="lname"> <br> <br>
             </div>
-            <div class="lowerportion">
-             <div class="details">
+            <div class="signuplowerportion">
+             <div class="signupdetails">
              
                      <h4>GENDER</h4>
                     <input type="radio" name="gender" value="male">MALE <br>
                     <input type="radio" name="gender" value="female">FEMALE<br>
             </div>    
               
-            <div class="user">
+            <div class="signupuser">
                 <h4>EMAIL</h4>
                 <input type="text" placeholder="EMAIL" name="uname" required class="email">
             </div>
-            <div class="pass">
+            <div class="signuppass">
                 <h4>PASSWORD</h4>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="psw" required class="password">
                 <h4>Confirm Password</h4> 
-                <input type="password" name="psw" placeholder="Reenter Password" required="true" class="password">
+                <input type="password" name="psw" placeholder="Reenter Password" required="true" class="c_password">
              </div>
  
              
@@ -37,18 +36,18 @@
              
             
                      <div class="col-sm-6">
-                         <div class="loginbar"> 
-                            <button type="submit" ng-click = "getUserData()">SIGN UP</button>
+                         <div class="signuploginbar"> 
+                            <button type="submit" class= "signupbutton" ng-click = "getUserData()">SIGN UP</button>
                        
 
                          </div>
                       </div>
-                     <div class="col-sm-6 text-right">
+                     <div class="col-sm-6 ">
                        
-                            <button type="button" class="cancelbtn">Cancel</button>
+                            <button type="button" class="signupcancelbtn">Cancel</button>
                             
                         </div>
-                    <div class="message text-right">
+                    <div class="signupmessage text-right">
                   
                         <span class="psw">already have account <a href="#">sign in</a></span>
              
@@ -57,7 +56,6 @@
             </div>
 
  
-        </form>
 
        
         </div>

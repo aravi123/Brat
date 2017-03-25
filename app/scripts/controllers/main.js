@@ -10,7 +10,7 @@
 angular.module('bratApp')
   .controller('MainCtrl', function ($scope,$http,$location,$window) {
  	$scope.getUserData = function(){
- 		if(checkalldata())
+ 		if(checkalldata() && isPasswordMatch() )
 	 	{
 	 		var data  = {};
 	 		data.fname = $('.fname').val();
@@ -42,4 +42,25 @@ angular.module('bratApp')
  			return false;
  		}
  	}
-  });
+  function isPasswordMatch() 
+    {
+    var password = $('.password').val();
+    var confirmPassword = $('.c_password').val();
+    console.log(password);
+    console.log(confirmPassword);
+    if (password == confirmPassword) 
+    {
+    
+    return true;
+    }
+    
+    else 
+    {
+    return false;
+    }
+    }
+      
+});
+    
+
+

@@ -12,6 +12,7 @@ angular.module('bratApp')
     $scope.init = function(){
     	console.log("obj");
     	userService.getUserDetails();
+    	userService.getBankdetails();
     }
     $scope.init();
   });

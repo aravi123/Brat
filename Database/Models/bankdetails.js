@@ -36,6 +36,10 @@ var bankdetailsSchema = new mongoose.Schema({
 	cardholdername:{
 		type:String,
 		default:""
+	},
+	balance:{
+		type:Number,
+		default:""
 	}
 });
 var bankdetails =  mongoose.model("bankdetails",bankdetailsSchema);

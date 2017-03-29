@@ -19,6 +19,8 @@ var signup = require('./Database/Signup.js');
 var signin = require('./Database/Signin.js');
 var userid = require('./Database/userid.js');
 var bankaccount = require('./Database/bankaccount.js');
+var waterbill = require('./Database/waterbill.js');
+var userbankdetails = require('./Database/userbankdetails.js');
 
 var app = express();
 
@@ -45,7 +47,8 @@ app.post('/signup',signup);
 app.post('/login',signin);
 app.get('/userId',userid);
 app.post('/bankaccount',bankaccount);
-
+app.post('/waterbill',waterbill);
+app.get('/userbankdetails',userbankdetails);
 
 // app.post('/signup',function(req,res){
 //   console.log(req.body);

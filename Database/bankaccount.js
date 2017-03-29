@@ -7,7 +7,8 @@ var bankModel = require('./Models/bankdetails.js');
 
 router.post('/bankaccount',function (req,res) {
 	console.log(req.session);
-	req.body.id = req.session.name;
+	req.body._id = req.session.name;
+	req.body.balance = 10000;
 	console.log(req.body);
 	var newbankdetails = new bankModel(req.body);
 	newbankdetails.save(function(err,docs){

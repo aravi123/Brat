@@ -45,9 +45,14 @@ angular
         controllerAs:'bankdetails'
       })
       .when('/Water',{
-        templateUrl:'../views/bills.html',
-        controller:'BillsCtrl',
-        controllerAs:'bills'
+        templateUrl:'../views/water.html',
+        controller:'WaterCtrl',
+        controllerAs:'water'
+      })
+      .when('/Water/bill',{
+        templateUrl:'../views/waterbill.html',
+        controller:'WaterCtrl',
+        controllerAs:'Water'
       })
       .when('/kseb',{
         templateUrl:'../views/kseb.html',

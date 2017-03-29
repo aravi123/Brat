@@ -32,7 +32,9 @@ angular.module('bratApp')
                 'Content-Type':'application/json'
             }
         }).then(function sucess(res){
-            
+            console.log("Sucess getBankdetails");
+            console.log(res);
+            $rootScope.balance = res.data.balance;
         })
     }
   });

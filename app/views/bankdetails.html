@@ -1,13 +1,39 @@
 <div class="container">
 	<div class="form-group">
-		<input type="text" name="cardholdername" placeholder="Enter name" class="bankdetails_cardholdername">
-		<input type="number" name="Accountno" placeholder="Enter Accountno" class="bankdetails_accountno">
-		<input type="text" name="Bank name" placeholder="Enter Bank name" class="bankdetails_bankname">
-		<input type="number" name="Debit/credit card number" placeholder="Enter card number" class="bankdetails_cardno">
-		<input type="number" name="cardcvv" placeholder="Enter Cvv code" class="bankdetails_cvv">
-		<input type="text" name="ifsc code" placeholder="Enter IFSC code" class="bankdetails_ifsccode">
-		<input type="number" name="expiry year" placeholder="Enter Expiry year" class="bankdetails_expiryyear">
-		<input type="number" name="expiry month" placeholder="Enter expiry month" class="bankdetails_expirymonth">
-		<button class="btn btn-primary bankdetails_submit" ng-click="submitBankDetails()">Submit</button>
+	<div class="acc_topnav" id="myTopnav">
+	  <h1>Payment</h1>
+	</div>
+	<div class="acc_hj">
+		<input type="text" class="bankdetails_bankname" placeholder="Bank Name" name="bankname" required><br>
+		<input type="text" class="bankdetails_ifsccode" placeholder="IFS Code" name="ifsc" required><br>
+		<input type="text" class="bankdetails_accountno" placeholder="Account number" name="accno" required><br>
+		<input type="text" class="bankdetails_cardno" placeholder="Debit Card No" name="cardno" required><br>
+		<select type="text" class="bankdetails_expirymonth" placeholder="Expiry Month" name="expmon" required>
+		    	<option>Jan</option>
+		    	<option>Feb</option>
+		    	<option>Mar</option>
+		    	<option>Apr</option>
+		    	<option>May</option>
+		    	<option>Jun</option>
+		    	<option>Jul</option>
+		    	<option>Aug</option>
+		    	<option>Sep</option>
+		    	<option>Oct</option>
+		    	<option>Nov</option>
+		    	<option>Dec</option>
+	    </select>
+		<select type="text" class="bankdetails_expiryyear" placeholder="Expiry Year" name="expyr" id="expyr" required><br>
+		<script type="text/javascript">
+			var select = document.getElementById('expyr');
+			for(var i = 17;i<=34;++i){
+				var opt = document.createElement('OPTION');
+				opt.innerHTML = i;
+				select.appendChild(opt);
+			}
+		</script>
+		</select><br>
+		<input type="password" class="bankdetails_cvv"  placeholder="CVV" name="cvv" required maxlength="3"><br>
+		<input type="text" class="bankdetails_cardholdername" placeholder="Card Holder name" name="name" required><br>
+		<button class="btn btn-primary bankdetails_submit" ng-click="submitBankDetails()">Submit</button><br>
 	</div>
 </div>

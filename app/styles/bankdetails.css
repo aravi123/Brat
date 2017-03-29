@@ -1,0 +1,133 @@
+.acc_topnav {
+    background-color: #506392;
+    overflow: hidden;
+    color:white;
+    width: 100%;
+    padding: 0px 40px;
+}
+input{
+    border-radius: 5px;
+    border: none;
+}
+h1{text-align: center;}
+.acc_hj {
+    text-align: center;
+    border: 3px black;
+    /*box-sizing: border-box;*/
+    padding: 20px 40px;
+    background-color: #9FC1CC;
+    width: 100%;
+    /*position: absolute;*/
+}
+.container{
+        margin: 0;
+    height: 100vh;
+    background-color: #d8e9f9;
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[type=password] {
+    width:100px;
+padding: 12px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/}
+ .bankdetails_cardno {
+width:200px;
+padding: 12px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/}
+ 
+ .bankdetails_cardholdername{
+width:200px;
+padding: 12px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/}
+.bankdetails_expirymonth {
+    width:100px;
+padding: 10px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/
+}
+
+.bankdetails_expiryyear {
+width:100px;
+padding: 10px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/
+ }
+
+ .bankdetails_cvv {
+width: 100px;   
+padding: 10px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/
+ }
+ .bankdetails_accountno{
+width:200px;
+padding: 12px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/
+ }
+ .bankdetails_ifsccode{
+width:200px;
+padding: 12px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/
+ }
+ .bankdetails_bankname{
+width:200px;
+padding: 12px 20px;
+margin: 10px 10px;
+display: inline-block;
+/*border: 3px solid #ccc;
+ box-sizing: border-box; */
+-moz-border-radius: 20px;
+ /*border-radius: 20px;*/
+ }
+ button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    align-self: center;
+}

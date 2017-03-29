@@ -1,8 +1,15 @@
 <div class="container">
-	<div class="heading">
-		<h1>Water Bill</h1>
-	</div>
-	<input type="text" name="billno" class="water_billno" placeholder="Enter Bill number">
-	<input type="text" name="number" class="water_monileno" placeholder="Enter mobile number">
+ <div class="water_container">
+	<div class="water_topnav" id="myTopnav">
+          <h1>Water Bill</h1>
+        </div>
+        <div class="water_inp_area">
+    		<label><b>Section: </b></label><br>
+            <input type="text" placeholder="Enter your Section" name="Section" required><br><br>
+            <label><b>Consumer Id:</b></label><br>
+            <input type="text" placeholder="Enter your consumer id" name="cno" required><br><br>
+            <label><b>Bill Number:</b></label><br>
+            <input type="text" class="water_billno" placeholder="Enter your Bill number" name="bno" required><br><br>
 	<button class="btn btn-primary"><a ng-href="/#!/Water/bill">View Bill</a></button>
+ </div>
 </div>

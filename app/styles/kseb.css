@@ -1,0 +1,41 @@
+.elc_container{
+        margin: 0;
+    font-family: 'Roboto Slab', serif;
+    background-color: #cde8ff;
+    height: 100vh;
+	width: 45%;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
+}
+.elc_inp_area{
+	padding-top: 20px;
+	background-color: aliceblue;
+	padding-bottom: 20px;
+}
+.elc_topnav {
+    background-color: #469db9;
+    overflow: hidden;
+}
+h1{text-align: center;}
+input[type=text]{
+    width: 300px;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 2px dotted #ccc;
+border-radius: 5px;
+ box-sizing: border-box;}
+ button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+   	border-radius: 5px;
+    align-self: center;
+}

@@ -14,7 +14,7 @@ router.post('/waterbill',function (req,res) {
 		_id:req.session.name,
 	},
 	{
-		$inc:{"balance":-800}
+		$inc:{"balance":-req.body.money}
 	},
 	function(err,sucess){
 		if (err) {

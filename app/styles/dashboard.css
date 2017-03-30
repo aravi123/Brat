@@ -1,0 +1,55 @@
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+body{
+	overflow-x: hidden;
+}
+.impfeed
+{
+    margin-top: 50px;
+    padding-left: 150px;
+}
+.dbheader h1
+{
+font-size: 100px;
+font-family: 'Roboto Slab', serif;
+color:white;
+}
+.dbheading
+{
+    background-color: #469db9;
+}
+.dbfooter h2
+{
+font-size:50px;
+font-family: 'Roboto Slab', serif;
+color:white; 
+text-align: center;
+}
+.dbdetails
+{
+background-color: #469db9;
+margin-top: 20px;
+
+
+}
+.dbdetails p
+{
+text-align: center;
+font-family: 'Roboto Slab', serif;
+color:white;
+    font-size: 20px;
+}
+.propic
+{
+padding-left: 150px;
+
+}
+.dbend p
+{
+font-family: 'Roboto Slab', serif;
+color:black;
+font-size: 30px;
+    padding-top: 10px;
+}

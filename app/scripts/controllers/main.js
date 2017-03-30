@@ -17,7 +17,7 @@ angular.module('bratApp')
 	 		data.lname = $('.lname').val();
 	 		data.email = $('.email').val();
 	 		data.password = $('.password').val();
-	 		data.gender = $('input[name="gender"]:checked').val();
+	 		//data.gender = $('input[name="gender"]:checked').val();
 	 		console.log(data);
 	 		$http({
 	 			method:'POST',
@@ -35,7 +35,7 @@ angular.module('bratApp')
  	}
  	function checkalldata(){
  		//console.log("obj");
- 		if (($('.fname').val()!="")&&($('.lname').val()!="")&&($('.email').val()!="")&&($('.password').val()!="")&&($('input[name="gender"]:checked').val()!=undefined	)) {
+ 		if (($('.fname').val()!="")&&($('.lname').val()!="")&&($('.email').val()!="")&&($('.password').val()!="")) {
  			return true;
  		}
  		else{

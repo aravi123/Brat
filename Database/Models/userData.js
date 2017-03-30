@@ -23,6 +23,10 @@ var userSchema = new mongoose.Schema({
 	password:{
 		type:String,
 		default:""
+	},
+	mobileno:{
+		type:Number,
+		default:""
 	}
 
 });

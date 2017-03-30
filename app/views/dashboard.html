@@ -1,4 +1,4 @@
-<div class="dashboard_details">
+<!-- <div class="dashboard_details">
 	<div class="account_details">
 		<h2><a ng-href="/#!/bankaccount">Account Details</a></h2>
 	</div>
@@ -17,4 +17,100 @@
 	<h1>{{balance}}</h1>
 	<h1>{{}}</h1>
 	<h1>{{}}</h1>
-</div>
+</div> -->
+<div class="dashboardcontainer">
+
+        <!-- Page Header -->
+        <div class="dbheader">
+            <div class="col-lg-12 dbheading text-center" class="img-responsive">
+                <h1 class="page-header"><marquee>UNIPORTAL</marquee>
+                </h1>
+            </div>
+        </div>
+
+<div class="col-md-12 notification-panel">
+    <div class="col-lg-6 propic text-center"class="img-responsive" >
+        <h3><a href="#">USER DETAILS</a></h3>
+        <h2>{{firstname}}</h2>
+        <h2>Your bank balance is {{balance}}</h2>
+    </div>
+    <div class="col-lg-6 impfeed" class="img-responsive">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bell fa-fw"></i> IMPORTANT FEEDS
+            </div>
+                        <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                    <i class="fa fa-comment fa-fw"></i> WATER BILL DUE ON THIS MONTH
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-twitter fa-fw"></i> REPORT
+                                    <span class="pull-right text-muted small"><em>15 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-envelope fa-fw"></i> TAX REPORT
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                </a>
+                               
+                            </div>
+                             </div>
+                         </div>
+     </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 text-center"class="img-responsive">
+                <h3>
+                    <a ng-href="/#!/bankaccount">ACCOUNT MANAGEMENT</a>
+                </h3>
+                <a href="#">
+                    <img class="img-responsive" src="./images/bank.png" alt="" style="text-align: center;">
+                </a>
+                
+                
+            </div>
+            <div class="col-md-6 text-center "class="img-responsive">
+               <h3>
+                    <a ng-href="/#!/Water">WATER BILL</a>
+                </h3>
+                
+                <a href="#">
+                    <img class="img-responsive" src="./images/water1.png" alt="" style="width: 320px;">
+                </a>
+                
+                
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 text-center"class="img-responsive">
+               <h3>
+                    <a href="/#!/kseb">ELECTRICITY-BILL</a>
+                </h3>
+                
+                <a href="#">
+                    <img class="img-responsive" src="./images/electric1.png" alt="">
+                </a>
+                
+            </div>
+            <div class="col-md-6 text-center" class="img-responsive">
+                <h3>
+                    <a href="/#!/incometax">INCOMETAX CALCULATION</a>
+                </h3>
+                <a href="#">
+                    <img class="img-responsive" src="./images/incometax.png" alt="">
+                </a>
+                
+                
+            </div>
+        </div>

@@ -59,8 +59,18 @@ angular
         controller:'KsebCtrl',
         controllerAs:'Kseb'
       })
+      .when('/kseb/bill',{
+        templateUrl:'../views/ksebbill.html',
+        controller:'KsebCtrl',
+        controllerAs:'kseb'
+      })
       .when('/incometax',{
         templateUrl:'../views/incometax.html',
+        controller:'IncometaxCtrl',
+        controllerAs:'Incometax'
+      })
+      .when('/incometax/bill',{
+        templateUrl:'../views/incometaxbill.html',
         controller:'IncometaxCtrl',
         controllerAs:'Incometax'
       })

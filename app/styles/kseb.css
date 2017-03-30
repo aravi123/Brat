@@ -1,5 +1,4 @@
 .elc_container{
-        margin: 0;
     font-family: 'Roboto Slab', serif;
     background-color: #cde8ff;
     height: 100vh;
@@ -7,7 +6,7 @@
 	text-align: center;
 	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(4%);
 	margin: auto;
 }
 .elc_inp_area{

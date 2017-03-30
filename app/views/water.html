@@ -1,15 +1,10 @@
-<div class="container">
- <div class="water_container">
-	<div class="water_topnav" id="myTopnav">
-          <h1>Water Bill</h1>
-        </div>
-        <div class="water_inp_area">
-    		<label><b>Section: </b></label><br>
-            <input type="text" placeholder="Enter your Section" name="Section" required><br><br>
-            <label><b>Consumer Id:</b></label><br>
-            <input type="text" placeholder="Enter your consumer id" name="cno" required><br><br>
-            <label><b>Bill Number:</b></label><br>
-            <input type="text" class="water_billno" placeholder="Enter your Bill number" name="bno" required><br><br>
-	<button class="btn btn-primary"><a ng-href="/#!/Water/bill">View Bill</a></button>
- </div>
+<div class="form-group">
+    <input type="text" name="username" class="waterusername" placeholder="Enter username"><br>
+    <input type="password" name="password" class="waterpassword" placeholder="Enter password">
+    <button class="btn btn-primary" ng-click="savewaterpassword()">Save Password</button>
 </div>
+<style>
+    .waterpassword{
+        border: 2px dotted black;
+    }
+</style>

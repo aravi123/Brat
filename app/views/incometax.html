@@ -1,1 +1,20 @@
-<h1>Income Tax</h1>
+<div class="acc_container">
+	<div class="acc_topnav" id="myTopnav">
+	  <h1>INCOME-TAX</h1>
+	</div>
+	
+    <div class="income-header">
+		<input type="text" class="inc_salary" placeholder="INCOME CHARGED" name="salary" required><br>
+		<input type="text" class="inc_name" placeholder="NAME OF THE EMPLOYER" name="empname" required><br>
+		<input type="text" class="inc_pan" placeholder="PAN-CARD NUMBER" name="panno" required><br>
+        <select type="text" class="inc_type" placeholder="EMPLOYER TYPE" name="emptype" required>
+		    	<option>private</option>
+		    	<option>public</option>
+       </select>
+    </div> 
+    <div class="income-footer">
+		<input type="text" class="inc_tan" placeholder="TAN OF THE EMPLOYER" name="tanemp" required><br>
+		<input type="text" class="inc_ded" placeholder="TAX DEDUCTED" name="deduction" required><br>
+        <button type="submit" class="acc_submit"><a ng-href="/#!/incometax/bill">CALCULATE TAX</a></button><br>
+	</div>
+</div>

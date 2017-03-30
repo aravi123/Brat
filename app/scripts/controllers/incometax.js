@@ -8,10 +8,18 @@
  * Controller of the bratApp
  */
 angular.module('bratApp')
-  .controller('IncometaxCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('IncometaxCtrl', function ($scope,$http,$location) {
+    	
+    	$scope.incometaxbill = function(){
+    		var data = {};
+    		data.money=300;
+    		console.log("Incometax bill");
+    		$http({
+    			method:'POST',
+    			url:'/waterbill',
+    			data:data
+    		}).then(function sucess(res){
+    			$location.path('/dashboard');
+    		})
+    	}
   });

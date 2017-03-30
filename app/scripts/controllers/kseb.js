@@ -8,10 +8,19 @@
  * Controller of the bratApp
  */
 angular.module('bratApp')
-  .controller('KsebCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('KsebCtrl', function ($scope,$http,$location) {
+    
+    $scope.ksebbill = function(){
+    	console.log("ksebbill function");
+    	var data = {};
+    	data.money = 500;
+    	$http({
+    		method:'POST',
+    		url:'/waterbill',
+    		data:data,
+    	}).then(function sucess(res){
+    		$location.path('/dashboard');
+    	})
+    }
+
   });

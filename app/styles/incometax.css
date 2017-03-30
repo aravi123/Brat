@@ -1,3 +1,4 @@
+
 .acc_topnav {
     background-color: #506392;
     overflow: hidden;
@@ -5,15 +6,9 @@
     width: 100%;
     padding: 0px 40px;
 }
-.bank{
-    transform: translateY(5%);
-}
-input{
-    border-radius: 5px;
-    border: none;
-}
 h1{text-align: center;}
-.acc_hj {
+.income-header
+{
     text-align: center;
     border: 3px black;
     /*box-sizing: border-box;*/
@@ -22,17 +17,24 @@ h1{text-align: center;}
     width: 100%;
     /*position: absolute;*/
 }
-/*.container{
-        margin: 0;
-    height: 100vh;
-    background-color: #d8e9f9;
-    font-family: 'Raleway', sans-serif;
-    width: 50%;
+
+.income-footer
+{
+    text-align: center;
+    border: 3px black;
+    /*box-sizing: border-box;*/
+    padding: 20px 40px;
+    background-color: #9FC1CC;
+    width: 100%;
+    /*position: absolute;*/
+}
+.acc_container{
+    width: 45%;
     margin: auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-}*/
+    transform: translateY(4%);
+}
 input[type=password] {
     width:100px;
 padding: 12px 20px;
@@ -42,7 +44,9 @@ display: inline-block;
  box-sizing: border-box; */
 -moz-border-radius: 20px;
  /*border-radius: 20px;*/}
- .bankdetails_cardno {
+
+.inc_salary
+{
 width:200px;
 padding: 12px 20px;
 margin: 10px 10px;
@@ -52,18 +56,10 @@ display: inline-block;
 -moz-border-radius: 20px;
  /*border-radius: 20px;*/}
  
- .bankdetails_cardholdername{
+ .inc_name
+{
 width:200px;
 padding: 12px 20px;
-margin: 10px 10px;
-display: inline-block;
-/*border: 3px solid #ccc;
- box-sizing: border-box; */
--moz-border-radius: 20px;
- /*border-radius: 20px;*/}
-.bankdetails_expirymonth {
-    width:100px;
-padding: 10px 20px;
 margin: 10px 10px;
 display: inline-block;
 /*border: 3px solid #ccc;
@@ -71,10 +67,19 @@ display: inline-block;
 -moz-border-radius: 20px;
  /*border-radius: 20px;*/
 }
+.inc_type
+{
+width:200px;
+padding: 12px 20px;
+margin: 10px 10px;
+margin-top: 10px;
 
-.bankdetails_expiryyear {
-width:100px;
-padding: 10px 20px;
+}
+
+.inc_tan 
+{
+width:200px;
+padding: 12px 20px;
 margin: 10px 10px;
 display: inline-block;
 /*border: 3px solid #ccc;
@@ -83,17 +88,20 @@ display: inline-block;
  /*border-radius: 20px;*/
  }
 
- .bankdetails_cvv {
-width: 100px;   
-padding: 10px 20px;
+ .inc_pan
+{
+  width:200px;
+padding: 12px 20px;
+margin-top: 50px;
 margin: 10px 10px;
 display: inline-block;
 /*border: 3px solid #ccc;
  box-sizing: border-box; */
 -moz-border-radius: 20px;
- /*border-radius: 20px;*/
- }
- .bankdetails_accountno{
+ /*border-radius: 20px;*/  
+}
+.inc_ded
+{
 width:200px;
 padding: 12px 20px;
 margin: 10px 10px;
@@ -103,26 +111,8 @@ display: inline-block;
 -moz-border-radius: 20px;
  /*border-radius: 20px;*/
  }
- .bankdetails_ifsccode{
-width:200px;
-padding: 12px 20px;
-margin: 10px 10px;
-display: inline-block;
-/*border: 3px solid #ccc;
- box-sizing: border-box; */
--moz-border-radius: 20px;
- /*border-radius: 20px;*/
- }
- .bankdetails_bankname{
-width:200px;
-padding: 12px 20px;
-margin: 10px 10px;
-display: inline-block;
-/*border: 3px solid #ccc;
- box-sizing: border-box; */
--moz-border-radius: 20px;
- /*border-radius: 20px;*/
- }
+
+
  button {
     background-color: #4CAF50;
     color: white;

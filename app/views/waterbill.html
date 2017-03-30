@@ -1,3 +1,9 @@
-<h1>Water Bill</h1>
-<h2>Your bill is Rs 800</h2>
-<button class="btn btn-primary" ng-click="paywaterbill()">Pay Now</button>
+
+<button class="btn btn-primary" ng-click="paywaterbill()"><a href="https://wss.kseb.in/selfservices/quickpay" target="_blank">Show username</a></button>
+
+<h1 class="waterbillusername">{{username}}</h1>
+<style>
+	.waterbillusername{
+		color: black;
+	}
+</style>
